@@ -28,6 +28,7 @@
   home.packages = with pkgs; [
     biber # for latex
     buildkit #fancy docker
+    doctl # DO CLI
     docker 
     docker-compose
     kitty # terminal
