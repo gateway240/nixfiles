@@ -64,13 +64,12 @@
     vimAlias = true;
 
     extraConfig = ''
-      :imap jk <Esc>
-      :set number
-      colorscheme nordfox
       syntax on
+      imap jk <Esc>
+      set number
+      colorscheme nordfox 
       set backspace=indent,eol,start
       filetype plugin indent on
-      :map l$ :Silent latexmk -output-directory=pdf_output -pdf MAIN.tex && open -a Preview && open -a Terminal<CR>
     '';
 
     # Neovim plugins
