@@ -18,4 +18,24 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # Packages
+  home.packages = with pkgs; [
+    conda
+  ];
+
+  # Keyboard
+  home.keyboard.options = [ "caps:swapescape" ];
+
+  # Git
+  programs.git = {
+    enable = true;
+    userName = "alexbeattie42";
+    userEmail = "alexander.beattie@quarkworks.co";
+    extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+    };
+  };
 }
