@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -18,11 +17,28 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  
+  # Session
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    TERMINAL = "kitty";
+  };
 
   # Packages
   home.packages = with pkgs; [
-    conda
+    biber # for latex
+    buildkit #fancy docker
+    docker 
+    docker-compose
+    kubectl
+    nodejs
+    git
+    python3
+    wget
+    vscodium
+    yarn
   ];
+  # Kitty terminal
 
   # Keyboard
   home.keyboard.options = [ "caps:swapescape" ];
@@ -37,5 +53,54 @@
         defaultBranch = "main";
       };
     };
+  };
+
+  # Vim 
+  programs.neovim = {
+    enable = true;
+    # Sets alias vim=nvim
+    vimAlias = true;
+
+    extraConfig = ''
+      :imap jk <Esc>
+      :set number
+      syntax on
+      set backspace=indent,eol,start
+      filetype plugin indent on
+    '';
+
+    # Neovim plugins
+    plugins = with pkgs.vimPlugins; [
+      vim-nix
+    ];
+  };
+
+  # Latex
+  programs.texlive.enable = true;
+  programs.texlive.extraPackages = tpkgs: {
+    inherit (tpkgs)
+      scheme-medium
+      float
+      enumitem
+      was
+      csquotes
+      multirow
+      booktabs
+      pgfplots
+      caption
+      titlesec
+      etoolbox
+      tocloft
+      parskip
+      nowidow
+      url
+      biblatex
+      biblatex-bath
+      lastpage
+      xassoccnt
+      setspace
+      xpatch
+      xstring
+      latexmk;
   };
 }
