@@ -30,6 +30,7 @@
     buildkit #fancy docker
     docker 
     docker-compose
+    kitty # terminal
     kubectl
     nodejs
     git
@@ -38,10 +39,11 @@
     vscodium
     yarn
   ];
-  # Kitty terminal
 
   # Keyboard
   home.keyboard.options = [ "caps:swapescape" ];
+
+  # Terminal
 
   # Git
   programs.git = {
@@ -64,14 +66,18 @@
     extraConfig = ''
       :imap jk <Esc>
       :set number
+      colorscheme nordfox
       syntax on
       set backspace=indent,eol,start
       filetype plugin indent on
+      :map l$ :Silent latexmk -output-directory=pdf_output -pdf MAIN.tex && open -a Preview && open -a Terminal<CR>
     '';
 
     # Neovim plugins
     plugins = with pkgs.vimPlugins; [
-      vim-nix
+      nightfox-nvim # Color scheme
+      vim-nix # Nix Editing
+      vimtex # Latex Editing
     ];
   };
 
