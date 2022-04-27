@@ -77,7 +77,6 @@
     plugins = with pkgs.vimPlugins; [
       nightfox-nvim # Color scheme
       vim-nix # Nix Editing
-      vimtex # Latex Editing
     ];
   };
 
