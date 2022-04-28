@@ -78,6 +78,7 @@
       imap jk <Esc> "jk also works a esc
 
       " Spell check
+      setlocal spell spelllang=en_us "local region
       set spelllang=en_us "spell check
       set spellsuggest=best,9 "9 Best Choices
       nnoremap <silent> <F11> :set spell!<cr> "Remap f11 so toggle spell check
