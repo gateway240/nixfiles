@@ -28,6 +28,7 @@
   home.packages = with pkgs; [
     bitwarden-cli
     biber # for latex
+    colima # docker runtime
     cmus # Music player
     doctl # DO CLI
     docker 
