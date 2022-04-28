@@ -32,4 +32,9 @@ based on [this](https://ghedam.at/24353/tutorial-getting-started-with-home-manag
 ```bash
 home-manager switch
 ```
+## New node packages
+```bash
 
+cd node
+nix-shell -p nodePackages.node2nix --command "node2nix -i ./node-packages.json -o node-packages.nix"
+```

@@ -26,11 +26,13 @@
 
   # Packages
   home.packages = with pkgs; [
+    bitwarden-cli
     biber # for latex
     buildkit #fancy docker
     doctl # DO CLI
     docker 
     docker-compose
+    jq
     kitty # terminal
     kubectl
     nodejs
