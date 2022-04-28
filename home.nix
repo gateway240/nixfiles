@@ -67,12 +67,21 @@
     vimAlias = true;
 
     extraConfig = ''
-      syntax on
-      imap jk <Esc>
-      set number
-      colorscheme nordfox 
-      set backspace=indent,eol,start
-      filetype plugin indent on
+      " Appearance
+      syntax on "highlight syntax
+      set number "Side bar line numbers
+      colorscheme nordfox "Nordfox colorscheme
+
+      " Functionality
+      set backspace=indent,eol,start "Logical backspaces
+      filetype plugin indent on "Smart indents
+      imap jk <Esc> "jk also works a esc
+
+      " Spell check
+      set spelllang=en_us "spell check
+      set spellsuggest=best,9 "9 Best Choices
+      nnoremap <silent> <F11> :set spell!<cr> "Remap f11 so toggle spell check
+      inoremap <silent> <F11> <C-O>:set spell!<cr>
     '';
 
     # Neovim plugins
