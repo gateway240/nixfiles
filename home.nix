@@ -86,6 +86,7 @@
 
     # Neovim plugins
     plugins = with pkgs.vimPlugins; [
+      markdown-preview-nvim # Markdown preview
       nightfox-nvim # Color scheme
       vim-nix # Nix Editing
     ];
