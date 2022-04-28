@@ -76,6 +76,7 @@
       set backspace=indent,eol,start "Logical backspaces
       filetype plugin indent on "Smart indents
       imap jk <Esc> "jk also works a esc
+      set wrap linebreak nolist "soft-wrap but don't break in the middle of a word
 
       " Spell check
       setlocal spell spelllang=en_us "local region
