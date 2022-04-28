@@ -28,11 +28,11 @@
   home.packages = with pkgs; [
     bitwarden-cli
     biber # for latex
-    buildkit #fancy docker
+    cmus # Music player
     doctl # DO CLI
     docker 
     docker-compose
-    jq
+    jq # Json manipulation
     kitty # terminal
     kubectl
     nodejs
