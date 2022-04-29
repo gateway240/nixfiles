@@ -76,6 +76,7 @@
       " Functionality
       set backspace=indent,eol,start "Logical backspaces
       filetype plugin indent on "Smart indents
+      set shiftwidth=2 "tab indents by 2
       imap jk <Esc> "jk also works a esc
       set wrap linebreak nolist "soft-wrap but don't break in the middle of a word
 
