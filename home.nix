@@ -37,7 +37,9 @@
     kitty # terminal
     kubectl
     nodejs
+    postgresql
     git
+    miller # CSV to JSON
     python3
     wget
     vscodium
