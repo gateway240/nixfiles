@@ -33,14 +33,18 @@
     doctl # DO CLI
     docker 
     docker-compose
+    hugo
     jq # Json manipulation
     kitty # terminal
     kubectl
     nodejs
     postgresql
+    protobuf #protoc compiler
     git
+    git-lfs
     miller # CSV to JSON
     python3
+    imagemagick
     wget
     vscodium
     yarn
