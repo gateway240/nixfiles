@@ -45,6 +45,7 @@
     miller # CSV to JSON
     python3
     imagemagick
+    terraform
     wget
     vscodium
     yarn
