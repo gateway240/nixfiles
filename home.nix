@@ -40,6 +40,7 @@
     nodejs
     postgresql
     protobuf #protoc compiler
+    pass # unix password manager
     restic # backup
     git
     git-lfs
