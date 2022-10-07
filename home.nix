@@ -33,6 +33,7 @@
     doctl # DO CLI
     docker 
     docker-compose
+    gnupg # gpg keys
     hugo
     jq # Json manipulation
     kitty # terminal
@@ -41,7 +42,6 @@
     postgresql
     protobuf #protoc compiler
     pass # unix password manager
-    restic # backup
     git
     git-lfs
     miller # CSV to JSON
