@@ -40,6 +40,7 @@
     nodejs
     postgresql
     protobuf #protoc compiler
+    restic # backup
     git
     git-lfs
     miller # CSV to JSON
