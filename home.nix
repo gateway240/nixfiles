@@ -38,6 +38,7 @@
     jq # Json manipulation
     kitty # terminal
     kubectl
+    kubeseal
     nodejs
     postgresql
     protobuf #protoc compiler
