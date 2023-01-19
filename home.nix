@@ -29,6 +29,7 @@
     bitwarden-cli
     biber # for latex
     colima # docker runtime
+    clang-tools 
     cmus # Music player
     doctl # DO CLI
     docker 
@@ -86,7 +87,7 @@
       " Functionality
       set backspace=indent,eol,start "Logical backspaces
       filetype plugin indent on "Smart indents
-      set shiftwidth=2 "tab indents by 2
+      set shiftwidth=4 "tab indents by 4
       imap jk <Esc> "jk also works a esc
       set wrap linebreak nolist "soft-wrap but don't break in the middle of a word
 
@@ -100,7 +101,9 @@
     plugins = with pkgs.vimPlugins; [
       markdown-preview-nvim # Markdown preview
       nightfox-nvim # Color scheme
+      vim-clang-format 
       vim-nix # Nix Editing
+      vim-cpp-enhanced-highlight
     ];
   };
 
