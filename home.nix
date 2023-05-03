@@ -47,7 +47,6 @@
     git
     git-lfs
     miller # CSV to JSON
-    python3
     imagemagick
     terraform
     wget
@@ -64,7 +63,7 @@
   programs.git = {
     enable = true;
     userName = "alexbeattie42";
-    userEmail = "alexander.beattie@quarkworks.co";
+    userEmail = "development@gateway240.com";
     extraConfig = {
       init = {
         defaultBranch = "main";
@@ -101,7 +100,6 @@
     plugins = with pkgs.vimPlugins; [
       markdown-preview-nvim # Markdown preview
       nightfox-nvim # Color scheme
-      vim-clang-format 
       vim-nix # Nix Editing
       vim-cpp-enhanced-highlight
     ];
